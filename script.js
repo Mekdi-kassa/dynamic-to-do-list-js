@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const listItem = document.createElement('li');
         listItem.textContent = taskText; // Set text content to the task
 
+        // Add a class to the list item for styling
+        listItem.classList.add('task-item'); // Add class 'task-item'
+
         // Create a remove button
         const removeButton = document.createElement('button');
         removeButton.textContent = 'Remove'; // Set button text
@@ -42,3 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
